@@ -1,17 +1,33 @@
-﻿<Properties>
+﻿<Properties StartupConfiguration="{FE8D67BC-67ED-4872-B4BF-1B01DF821650}|Default">
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/evertonkluczkovski/Git/minimal-api-web-hook/WebHookExample/src/webHookApi/Program.cs" relfile="src/webHookApi/Program.cs" line="10" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.webHookApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/webHookApi/Program.cs">
+    <Files>
+      <File FileName="src/webHookApi/Program.cs" Line="7" Column="1" />
+      <File FileName="src/webHookApi/appsettings.Development.json" />
+      <File FileName="src/webHookApi/Properties/launchSettings.json" />
+      <File FileName="src/webHookApi/appsettings.json" />
+      <File FileName="src/webHookApi/Model/Payload.cs" />
+      <File FileName="src/webHookApi/Model/Sender.cs" />
+      <File FileName="src/webHookApi/Model/Repository.cs" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="WebHookExample" selected="True" />
+          <Node name="WebHookExample" expanded="True">
+            <Node name="webHookApi" expanded="True">
+              <Node name="Model" expanded="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

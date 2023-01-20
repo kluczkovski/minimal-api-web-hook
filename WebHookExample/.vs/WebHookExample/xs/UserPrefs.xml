@@ -1,33 +1,43 @@
-﻿<Properties StartupConfiguration="{FE8D67BC-67ED-4872-B4BF-1B01DF821650}|Default">
-  <MultiItemStartupConfigurations />
+﻿<Properties StartupConfiguration="{9A515798-E49E-45FA-BE94-99D3DBDA5986}|Default">
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/evertonkluczkovski/Git/minimal-api-web-hook/WebHookExample/src/webHookApi/Program.cs" relfile="src/webHookApi/Program.cs" line="10" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.webHookApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/webHookApi/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="docker-compose.yml">
     <Files>
-      <File FileName="src/webHookApi/Program.cs" Line="7" Column="1" />
-      <File FileName="src/webHookApi/appsettings.Development.json" />
-      <File FileName="src/webHookApi/Properties/launchSettings.json" />
-      <File FileName="src/webHookApi/appsettings.json" />
+      <File FileName="src/webHookApi/Program.cs" Line="10" Column="1" />
+      <File FileName="src/webHookApi/Properties/launchSettings.json" Line="10" Column="16" />
+      <File FileName="src/webHookApi/appsettings.json" Line="1" Column="1" />
       <File FileName="src/webHookApi/Model/Payload.cs" />
       <File FileName="src/webHookApi/Model/Sender.cs" />
       <File FileName="src/webHookApi/Model/Repository.cs" />
+      <File FileName=".editorconfig" Line="1" Column="1" />
+      <File FileName="src/webHookApi/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="src/webHookApi/Dockerfile" Line="6" Column="11" />
+      <File FileName="docker-compose.override.yml" Line="11" Column="1" />
+      <File FileName="docker-compose.yml" Line="11" Column="17" />
+      <File FileName=".dockerignore" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WebHookExample" expanded="True">
-            <Node name="webHookApi" expanded="True">
-              <Node name="Model" expanded="True" />
+            <Node name="docker-compose" expanded="True">
+              <Node name="docker-compose.yml" expanded="True" selected="True" />
             </Node>
+            <Node name="webHookApi" expanded="True" />
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.webHookApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

@@ -1,31 +1,29 @@
 ﻿<Properties StartupConfiguration="{9A515798-E49E-45FA-BE94-99D3DBDA5986}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.webHookApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/webHookApi/Program.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="docker-compose.yml">
     <Files>
+      <File FileName="src/webHookApi/appsettings.Development.json" Line="1" Column="1" IsPinned="True" />
       <File FileName="src/webHookApi/Program.cs" Line="10" Column="1" />
-      <File FileName="src/webHookApi/Properties/launchSettings.json" />
-      <File FileName="src/webHookApi/appsettings.json" />
-      <File FileName="src/webHookApi/Model/Payload.cs" />
-      <File FileName="src/webHookApi/Model/Sender.cs" />
       <File FileName="src/webHookApi/Model/Repository.cs" />
-      <File FileName=".editorconfig" />
-      <File FileName="src/webHookApi/appsettings.Development.json" />
-      <File FileName="src/webHookApi/Dockerfile" />
-      <File FileName="docker-compose.override.yml" />
-      <File FileName="docker-compose.yml" Line="8" Column="44" />
-      <File FileName=".dockerignore" />
+      <File FileName="docker-compose.override.yml" Line="1" Column="1" />
+      <File FileName="docker-compose.yml" Line="11" Column="19" />
+      <File FileName="src/webHookApi/Dockerfile" Line="1" Column="1" />
+      <File FileName=".dockerignore" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WebHookExample" expanded="True">
             <Node name="docker-compose" expanded="True">
-              <Node name="docker-compose.yml" expanded="True" />
+              <Node name="docker-compose.yml" expanded="True">
+                <Node name="docker-compose.override.yml" selected="True" />
+              </Node>
             </Node>
-            <Node name="webHookApi" expanded="True" />
+            <Node name="webHookApi" expanded="True">
+              <Node name="Properties" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -34,10 +32,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/evertonkluczkovski/Git/minimal-api-web-hook/WebHookExample/src/webHookApi/Program.cs" relfile="src/webHookApi/Program.cs" line="10" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

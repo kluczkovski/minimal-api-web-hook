@@ -6,3 +6,13 @@ services:
     build:
       context: .
       dockerfile: src/webHookApi/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    ports:
+      - "8080:80"
+      - "7443:443"
+    volumes:
+      - ${HOME}/.aspnet/https:/root/.aspnet/https:ro
+      - ${HOME}/.microsoft/usersecrets:/root/.microsoft/usersecrets
+  

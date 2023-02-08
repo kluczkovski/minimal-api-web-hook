@@ -1,42 +1,47 @@
 ﻿<Properties StartupConfiguration="{9A515798-E49E-45FA-BE94-99D3DBDA5986}|Default">
-  <MonoDevelop.Ide.ItemProperties.webHookApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="docker-compose.yml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/webHookApi/Domain/Entities/Payload/RepositoryGit.cs">
     <Files>
-      <File FileName="src/webHookApi/appsettings.Development.json" Line="1" Column="1" IsPinned="True" />
-      <File FileName="src/webHookApi/Program.cs" Line="10" Column="1" />
-      <File FileName="src/webHookApi/Model/Repository.cs" />
-      <File FileName="docker-compose.override.yml" Line="1" Column="1" />
-      <File FileName="docker-compose.yml" Line="11" Column="19" />
-      <File FileName="src/webHookApi/Dockerfile" Line="1" Column="1" />
-      <File FileName=".dockerignore" Line="1" Column="1" />
+      <File FileName="src/webHookApi/Program.cs" Line="8" Column="17" />
+      <File FileName="src/webHookApi/Presentation/EntryPointPayload.cs" Line="14" Column="62" />
+      <File FileName="src/webHookApi/Domain/Entities/Repository.cs" Line="18" Column="1" />
+      <File FileName="src/webHookApi/Infrastructure/ApplicationDbContext.cs" Line="22" Column="1" />
+      <File FileName="src/webHookApi/Infrastructure/EntityConfigurations/IssueEntityConfiguration.cs" Line="15" Column="1" />
+      <File FileName="src/webHookApi/appsettings.Development.json" Line="10" Column="73" />
+      <File FileName="src/webHookApi/Domain/Entities/Issue.cs" Line="14" Column="1" />
+      <File FileName="src/webHookApi/Domain/Entities/Entity.cs" Line="11" Column="1" />
+      <File FileName="src/webHookApi/Domain/Entities/Sender.cs" Line="7" Column="24" />
+      <File FileName="src/webHookApi/Infrastructure/EntityConfigurations/RepositoryGitEntityConfiguration.cs" Line="18" Column="77" />
+      <File FileName="src/webHookApi/Infrastructure/EntityConfigurations/SenderEntityConfiguration.cs" Line="18" Column="42" />
+      <File FileName="src/webHookApi/Infrastructure/EntityConfigurations/PayloadEntityConfiguration.cs" Line="19" Column="40" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WebHookExample" expanded="True">
-            <Node name="docker-compose" expanded="True">
-              <Node name="docker-compose.yml" expanded="True">
-                <Node name="docker-compose.override.yml" selected="True" />
-              </Node>
-            </Node>
             <Node name="webHookApi" expanded="True">
-              <Node name="Properties" expanded="True" />
+              <Node name="Domain" expanded="True">
+                <Node name="Entities" expanded="True">
+                  <Node name="Payload" expanded="True" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Presentation" expanded="True">
+                <Node name="Payload" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/evertonkluczkovski/Git/minimal-api-web-hook/WebHookExample/src/webHookApi/Program.cs" relfile="src/webHookApi/Program.cs" line="10" column="1" />
+      <Breakpoint file="/Users/evertonkluczkovski/Git/minimal-api-web-hook/WebHookExample/src/webHookApi/Presentation/Payload/EntryPointPayload.cs" relfile="src/webHookApi/Presentation/Payload/EntryPointPayload.cs" line="14" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.webHookApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

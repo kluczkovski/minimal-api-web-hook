@@ -9,12 +9,46 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Model\" />
+    <None Remove="Infrastructure\" />
+    <None Remove="Infrastructure\EntityConfigurations\" />
+    <None Remove="Infrastructure\Respositories\" />
+    <None Remove="Domain\" />
+    <None Remove="Domain\Entities\" />
+    <None Remove="Presentation\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="Domain\Entities\Payload\" />
+    <None Remove="Presentation\Payload\" />
+    <None Remove="Infrastructure\Respositories\Implementation\" />
+    <None Remove="Presentation\Payload\Dto\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Infrastructure\EntityConfigurations\" />
+    <Folder Include="Infrastructure\Respositories\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Domain\Entities\" />
+    <Folder Include="Presentation\" />
+    <Folder Include="Domain\Entities\Payload\" />
+    <Folder Include="Presentation\Payload\" />
+    <Folder Include="Infrastructure\Respositories\Implementation\" />
+    <Folder Include="Presentation\Payload\Dto\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\.editorconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.13">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.13">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 </Project>

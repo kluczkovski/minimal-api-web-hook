@@ -1,21 +1,20 @@
-using webHookApi.Model;
+using Microsoft.EntityFrameworkCore;
+using webHookApi.Infrastructure;
+using webHookApi.Infrastructure.Respositories.Implementation;
+using webHookApi.Presentation;
+using webHookApi.Presentation.Payload;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("WebHookConnection"));
+});
+
+builder.Services.AddScoped<IPayLoadRepository, PayLoadRepository>();
+
 var app = builder.Build();
 
-app.MapPost("/payload", async (HttpRequest request) =>
-{
-    app.Logger.Log(LogLevel.Information, "Starting payload");
-
-    var payload = await request.ReadFromJsonAsync<Payload>();
-    app.Logger.Log(LogLevel.Information, $"Payload Action: {payload?.Action}");
-    app.Logger.Log(LogLevel.Information, $"Payload Issue Title: {payload?.Issue.Title}");
-    app.Logger.Log(LogLevel.Information, $"Payload Issue url: {payload?.Issue.Url}");
-    app.Logger.Log(LogLevel.Information, $"Payload Repository Name : {payload?.Repository.FullName}");
-
-    app.Logger.Log(LogLevel.Information, "Ending payload");
-
-    Results.Ok();
-});
+EntryPointPayload.Post(app);
 
 app.Run();

@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using webHookApi.Infrastructure;
+using webHookApi.Infrastructure.InitialiseDataBase;
 using webHookApi.Infrastructure.Respositories.Implementation;
 using webHookApi.Presentation;
 using webHookApi.Presentation.Payload;
@@ -14,6 +16,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped<IPayLoadRepository, PayLoadRepository>();
 
 var app = builder.Build();
+
+app.MigrationDataBase();
 
 EntryPointPayload.Post(app);
 

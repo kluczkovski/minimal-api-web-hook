@@ -23,6 +23,7 @@
     <None Remove="Presentation\Payload\" />
     <None Remove="Infrastructure\Respositories\Implementation\" />
     <None Remove="Presentation\Payload\Dto\" />
+    <None Remove="Infrastructure\Seed\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Infrastructure\" />
@@ -35,6 +36,7 @@
     <Folder Include="Presentation\Payload\" />
     <Folder Include="Infrastructure\Respositories\Implementation\" />
     <Folder Include="Presentation\Payload\Dto\" />
+    <Folder Include="Infrastructure\InitialiseDataBase\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\.editorconfig" />

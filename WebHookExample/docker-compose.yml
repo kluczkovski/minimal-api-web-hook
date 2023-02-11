@@ -1,6 +1,16 @@
 version: '3.4'
 
 services:
+  
+  sql-server:
+    container_name: sql-edge
+    image: mcr.microsoft.com/azure-sql-edge:latest
+    environment:
+      SA_PASSWORD: "Test@1@2"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1434:1433"
+
   webhookapi:
     image: ${DOCKER_REGISTRY-}webhookapi
     build:
@@ -15,4 +25,7 @@ services:
     volumes:
       - ${HOME}/.aspnet/https:/root/.aspnet/https:ro
       - ${HOME}/.microsoft/usersecrets:/root/.microsoft/usersecrets
+    depends_on:
+      - sql-server
+
   

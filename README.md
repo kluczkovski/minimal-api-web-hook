@@ -6,3 +6,4 @@ Minimal Api - .NET 6 using docker compose (webapi and sqlserver)
 Design Patterns used:
  - Repository
  - Mediator 
+ - CORS

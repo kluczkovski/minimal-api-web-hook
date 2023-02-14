@@ -1,9 +1,9 @@
 ﻿
 namespace webHookApi.Domain.Entities.Payload
 {
-	public class PayLoad : Entity
+	public class PayLoadEntity : Entity
 	{
-		public PayLoad()
+		public PayLoadEntity()
 		{
 			Issue = new Issue();
 			RepositoryGit = new RepositoryGit();

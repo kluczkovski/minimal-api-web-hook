@@ -6,9 +6,9 @@ using webHookApi.Domain.Entities.Payload;
 
 namespace webHookApi.Infrastructure.EntityConfigurations
 {
-    public class PayLoadEntityConfiguration : IEntityTypeConfiguration<PayLoad>
+    public class PayLoadEntityConfiguration : IEntityTypeConfiguration<PayLoadEntity>
     {
-        public void Configure(EntityTypeBuilder<PayLoad> builder)
+        public void Configure(EntityTypeBuilder<PayLoadEntity> builder)
         {
             builder.ToTable("PayLoad");
 

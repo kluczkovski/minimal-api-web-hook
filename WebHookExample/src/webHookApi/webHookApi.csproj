@@ -24,6 +24,13 @@
     <None Remove="Infrastructure\Respositories\Implementation\" />
     <None Remove="Presentation\Payload\Dto\" />
     <None Remove="Infrastructure\Seed\" />
+    <None Remove="Application\" />
+    <None Remove="Application\Abstractions\" />
+    <None Remove="Application\PayLoad\" />
+    <None Remove="Application\PayLoad\Commands\" />
+    <None Remove="Application\PayLoad\Queries\" />
+    <None Remove="MediatR" />
+    <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Infrastructure\" />
@@ -37,6 +44,11 @@
     <Folder Include="Infrastructure\Respositories\Implementation\" />
     <Folder Include="Presentation\Payload\Dto\" />
     <Folder Include="Infrastructure\InitialiseDataBase\" />
+    <Folder Include="Application\" />
+    <Folder Include="Application\Abstractions\" />
+    <Folder Include="Application\PayLoad\" />
+    <Folder Include="Application\PayLoad\Commands\" />
+    <Folder Include="Application\PayLoad\Queries\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\.editorconfig" />
@@ -52,5 +64,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="MediatR" Version="11.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
   </ItemGroup>
 </Project>

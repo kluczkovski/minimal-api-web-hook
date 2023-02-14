@@ -1,4 +1,6 @@
 ﻿using System;
+using MediatR;
+using webHookApi.Application.PayLoad.Commands;
 using webHookApi.Domain.Entities.Payload;
 using webHookApi.Infrastructure.Respositories.Implementation;
 using webHookApi.Presentation.Payload.Dto;
@@ -9,7 +11,7 @@ namespace webHookApi.Presentation.Payload
 	{
 		public static void Post(this WebApplication app)
 		{
-            app.MapPost("/payload", async (HttpRequest request, IPayLoadRepository _payloadRepository) =>
+            app.MapPost("/payload", async (HttpRequest request, IMediator mediator) =>
             {
                 app.Logger.Log(LogLevel.Information, "Starting payload");
 
@@ -23,17 +25,7 @@ namespace webHookApi.Presentation.Payload
 
                 if (payloadDto != null)
                 {
-                    var payLoad = new PayLoad();
-                    payLoad.Action = payloadDto.Action;
-                    payLoad.Issue.Title = payloadDto.Issue.Title;
-                    payLoad.Issue.Url = payloadDto.Issue.Url;
-                    payLoad.Issue.Number = payloadDto.Issue.Number;
-                    payLoad.RepositoryGit.FullName = payloadDto.RepositoryGit.FullName;
-                    payLoad.RepositoryGit.Id = payloadDto.RepositoryGit.Id;
-                    payLoad.Sender.Id = payloadDto.Sender.Id;
-                    payLoad.Sender.Login = payloadDto.Sender.Login;
-
-                    var temp = await _payloadRepository.AddAsync(payLoad);
+                    var payload = mediator.Send<PayLoadEntity>(new CreatePayLoadCommand(payloadDto));
                 }
 
                 Results.Ok();

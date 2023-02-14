@@ -1,3 +1,4 @@
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using webHookApi.Infrastructure;
@@ -14,6 +15,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 });
 
 builder.Services.AddScoped<IPayLoadRepository, PayLoadRepository>();
+
+builder.Services.AddMediatR(typeof(Program));
 
 var app = builder.Build();
 
